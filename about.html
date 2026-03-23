@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Tools Hub | About Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+nav h2 { color: #38bdf8; font-weight: 700; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav a.active { color: #38bdf8; font-weight: bold; }
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.hero h1 {
+  font-size: 3.5em;
+  color: white;
+}
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+/* MISSION/VISION */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+.info-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  flex: 1 1 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+.info-card h2 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+.info-card p {
+  color: #cbd5e1;
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+/* TEAM */
+.team-section {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.team-section h2 {
+  color: #38bdf8;
+  margin-bottom: 40px;
+  font-size: 2.2em;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.team-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #38bdf8;
+}
+.team-card h3 { color: #38bdf8; margin-bottom: 5px; }
+.team-card p { color: #cbd5e1; font-size: 0.95em; }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+  margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>AI Hub</h2>
+  <div>
+    <a href="./index.html">Home</a>
+
+    <a href="./tools.html">Tools</a>
+    <a href="./about.html" class="active">About</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>About AI Hub</h1>
+  <p>Empowering individuals and businesses with the best AI tools for creativity and productivity</p>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="info-section">
+  <div class="info-card">
+    <h2>Our Mission</h2>
+    <p>To make AI accessible to everyone, helping users discover and utilize cutting-edge tools for writing, design, coding, and more.</p>
+  </div>
+  <div class="info-card">
+    <h2>Our Vision</h2>
+    <p>To create a platform where AI empowers people to innovate, save time, and achieve their goals efficiently, no matter their skill level.</p>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section">
+  <h2>Meet the Team</h2>
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Founder">
+      <h3>Theoneste Dushimirimana</h3>
+      <p>Founder & Lead Developer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Designer">
+      <h3>Alice Smith</h3>
+      <p>UI/UX Designer</p>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png" alt="Marketing">
+      <h3>John Doe</h3>
+      <p>Marketing & Content Specialist</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 AI Hub | Powered by AI Innovation
+</footer>
+
+</body>
+</html>
