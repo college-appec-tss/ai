@@ -1,153 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Robots + Sitemap + Verification -->
   <meta name="robots" content="index, follow">
-
-<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
   <meta name="google-site-verification" content="si-0ppxEBrg3Gla-h9QT-iys1ylglCHIRYimhJE8mis" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Tools Hub | Discover Best AI Tools</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- SEO -->
+  <title>AI Tools Hub | Discover Best AI Tools</title>
+  <meta name="description" content="Discover the best AI tools for writing, design, coding, and more. AI Hub brings top AI technologies together in one platform.">
+  <meta name="keywords" content="AI tools, ChatGPT, Grammarly, AI design, AI coding, AI Hub">
+  <meta name="author" content="Theoneste Dushimirimana">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-body {
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: white;
-}
+  <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-}
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+    }
 
-nav h2 {
-  color: #38bdf8;
-}
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-size: 14px;
-}
+    nav h2 {
+      color: #38bdf8;
+    }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
 
-.hero h1 {
-  font-size: 3em;
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-.hero p {
-  margin-top: 10px;
-  color: #94a3b8;
-}
+    .hero h1 {
+      font-size: 3em;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-.search-box {
-  margin-top: 30px;
-}
+    .hero p {
+      margin-top: 10px;
+      color: #94a3b8;
+    }
 
-.search-box input {
-  padding: 14px;
-  width: 80%;
-  max-width: 500px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
+    .search-box {
+      margin-top: 30px;
+    }
 
-/* FILTER */
-.filters {
-  text-align: center;
-  margin: 20px;
-}
+    .search-box input {
+      padding: 14px;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
 
-.filters button {
-  padding: 8px 15px;
-  margin: 5px;
-  border: none;
-  border-radius: 20px;
-  background: #1e293b;
-  color: white;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    /* FILTER */
+    .filters {
+      text-align: center;
+      margin: 20px;
+    }
 
-.filters button:hover {
-  background: #38bdf8;
-}
+    .filters button {
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 20px;
+      background: #1e293b;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-/* CARDS */
-.container {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
+    .filters button:hover {
+      background: #38bdf8;
+    }
 
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.1);
-}
+    /* CARDS */
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
 
-.card:hover {
-  transform: translateY(-8px);
-  border-color: #38bdf8;
-}
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
 
-.card h3 {
-  margin-bottom: 10px;
-}
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #38bdf8;
+    }
 
-.card p {
-  font-size: 14px;
-  color: #94a3b8;
-}
+    .card h3 {
+      margin-bottom: 10px;
+    }
 
-.card a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 8px 14px;
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-}
+    .card p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #64748b;
-}
-</style>
-<meta name="description" content="Discover the best AI tools for writing, design, coding, and more. AI Hub brings top AI technologies together in one platform.">
-<meta name="keywords" content="AI tools, ChatGPT, Grammarly, AI design, AI coding, AI Hub">
-<meta name="author" content="Theoneste Dushimirimana">
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 14px;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
 </head>
 
 <body>
@@ -216,7 +221,7 @@ footer {
 </div>
 
 <footer>
- <marquee> best ai tools in this years to use in different carriers</marquee>
+ <marquee>best ai tools in this years to use in different careers</marquee>
 </footer>
 
 <script>
